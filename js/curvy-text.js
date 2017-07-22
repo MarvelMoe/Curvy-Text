@@ -92,11 +92,6 @@
     $t.addClass(effect)
       .css('visibility', 'visible')
       .show();
-
-    $t.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
-        $t.removeClass(effect);
-        cb && cb();
-    });
   }
 
   function animateTokens ($tokens, options, cb) {
@@ -117,9 +112,7 @@
       function complete () {
         if (isInEffect(options.effect)) {
           $token.css('visibility', 'visible');
-        } else if (isOutEffect(options.effect)) {
-          $token.css('visibility', 'hidden');
-        }
+        }  
         count -= 1;
         if (!count && cb) cb();
       }
@@ -206,9 +199,7 @@
 
       if (isInEffect(options.in.effect)) {
         $tokens.css('visibility', 'hidden');
-      } else if (isOutEffect(options.in.effect)) {
-        $tokens.css('visibility', 'visible');
-      }
+      }  
 
       base.currentIndex = index;
 
