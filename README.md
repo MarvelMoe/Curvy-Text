@@ -47,6 +47,8 @@ The goal was to reduce the amount of http requests; especially if you're just an
       reverse: false,
       shuffle: false,
       
-   ##  Demo
+##  Demo
+ 
+ ```
    On a live site
    https://lalunainn.com
