@@ -38,12 +38,15 @@ The goal was to reduce the amount of http requests; especially if you're just an
                     effect: 'animation-class'
                 }
             });
-        }) 
         
- - Options(default settings)
+ - Options(these are default settings)
  ```
       delayScale: 1.5,
       delay: 50,
       sync: false,
       reverse: false,
-      shuffle: false, 
+      shuffle: false,
+      
+   ##  Demo
+   On a live site
+   https://lalunainn.com
